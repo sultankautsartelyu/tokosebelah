@@ -5,8 +5,7 @@ include 'database/config.php';
 error_reporting(0);
  
 session_start();
- 
- 
+
 if (isset($_POST['submit'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -32,8 +31,5 @@ if (isset($_POST['submit'])) {
                 echo "<script>alert('Woops! Terjadi kesalahan.')</script>";
                 echo "<script>document.location.href = 'contact.php';</script>";
             }
-        
-         
-
 }
  
