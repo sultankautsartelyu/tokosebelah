@@ -4,7 +4,6 @@ include '../database/session.php';
  
 error_reporting(0);
 
- 
 if (isset($_POST['submit'])) {
     $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
     $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
@@ -45,7 +44,4 @@ if (isset($_POST['submit'])) {
         echo "<script>alert('Woops! Terjadi kesalahan.')</script>";
         echo "<script>document.location.href = 'profile.php';</script>";
     }
-        
-         
-
 }
